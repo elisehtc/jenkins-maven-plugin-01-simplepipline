@@ -1,5 +1,8 @@
 pipeline{
     agent any
+    tools {
+          maven 'my-maven-3.6.3' 
+      }
     stages{
         stage("Checkout Code from SCM"){
             steps{
